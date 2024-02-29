@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Light gray background */
+            color: #333; /* Dark text color */
+        }
+
+        header {
+            background-color: #1a1a1a; /* Dark background for header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: #496ef5; /* Dark color for links */
+            text-decoration: none;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #1a1a1a; /* Dark color for headings */
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        form {
+            margin-top: 20px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #1a1a1a; /* Dark background for button */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #333; /* Dark hover color for button */
+        }
+
+        footer {
+            background-color: #1a1a1a; /* Dark background for footer */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>About Me</h2>
+    <p>I'm Marielle Anne B. Sumonod, an IT student at USTP and an elected SK Kagawad of Barangay 6. Passion drives me in everything I do, from organizing community events to mastering IT concepts. Cooking, music, and gaming are my cherished escapes. Whether crafting delicious dishes, losing myself in melodies, or immersing in virtual worlds, each activity brings joy and fulfillment. But above all, serving others is my greatest passion. As an SK Kagawad, I merge my love for technology with community service, striving to make a positive impact. Through dedication and compassion, I aim to leave a lasting mark on both the academic and civic realms.</p>
+
+    <h2>Services</h2>
+    <p>Check out my <a href="https://github.com/maryelang" style="color: #1a1a1a; text-decoration: underline;">GitHub</a> page to see some of my works.</p>
+
+    <h2>Social Media</h2>
+    <p>You can also reach out to me through the following links:</p>
+    <ul>
+        <li><a href="https://zoom.us/" style="color: #1a1a1a; text-decoration: underline;">Zoom</a></li>
+        <li><a href="mailto:youremail@example.com" style="color: #1a1a1a; text-decoration: underline;">Gmail</a></li>
+        <li><a href="https://www.facebook.com/" style="color: #1a1a1a; text-decoration: underline;">Facebook</a></li>
+    </ul>
+
+    <h2>Random Brands I Like</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Shoes</th>
+                <th>Laptop</th>
+                <th>Mobile Phones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Converse</td>
+                <td>Acer</td>
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>Nike</td>
+                <td>Dell</td>
+                <td>Samsung</td>
+            </tr>
+            <tr>
+                <td>Keds</td>
+                <td>Apple</td>
+                <td>Xiaomi</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>HTML Tags</h2>
+    <hr>Text Formatting<hr>
+    <b>This text is bold</b>
+    <strong>This text is important!</strong>
+    <i>This text is italic</i>
+    <em>This text is emphasized</em>
+    <small>This is some smaller text.</small>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+
+    <h2>Random Images I like</h2>
+    <img src="photos/wp3696269-taylor-swift-reputation-wallpapers.jpg" alt="Image 1">
+    <img src="photos/wp4468061-taylor-swifts-reputation-stadium-tour-wallpapers.jpg" alt="Image 2">
+    <img src="photos/wp12161265-taylor-swift-midnights-desktop-wallpapers.jpg" alt="Image 3">
+
+    <h2>Feedback Form</h2>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 HTML Tags. BSIT-2R3.</p>
+    </footer>
+
+</body>
+</html>
