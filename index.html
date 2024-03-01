@@ -84,6 +84,27 @@
             font-size: 16px;
         }
 
+        footer {
+            background-color: #1a1a1a; /* Dark background for footer */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures the footer stays on top of other content */
+        }
+
+        /* Additional styles for the button to be visible */
+        .form-section {
+            padding-bottom: 80px; /* Adjust as needed to ensure the button is not blocked */
+        }
+
+        /* Centering the button */
+        form {
+            text-align: center;
+        }
+
         button {
             background-color: #1a1a1a; /* Dark background for button */
             color: #fff;
@@ -94,49 +115,86 @@
         }
 
         button:hover {
-            background-color: #333; /* Dark hover color for button */
+            background-color: #333;
         }
 
-        footer {
-            background-color: #1a1a1a; /* Dark background for footer */
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>HTML Tags</h1>
         <nav>
             <ul>
-                <li><a href="#About">About Me</a></li>
-                <li><a href="#Images">Images</a></li>
-                <li><a href="#Form">Form</a></li>
+                <li><a href="#text">Text Formatting</a></li>
+                <li><a href="#list">List</a></li>
+                <li><a href="#links">links</a></li>
+                <li><a href="#table">Tables</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#Form">Forms</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="page-section about me" id="About">
-    <h2>About Me</h2>
-    <p>I'm Marielle Anne B. Sumonod, an IT student at USTP and an elected SK Kagawad of Barangay 6. Passion drives me in everything I do, from organizing community events to mastering IT concepts. Cooking, music, and gaming are my cherished escapes. Whether crafting delicious dishes, losing myself in melodies, or immersing in virtual worlds, each activity brings joy and fulfillment. But above all, serving others is my greatest passion. As an SK Kagawad, I merge my love for technology with community service, striving to make a positive impact. Through dedication and compassion, I aim to leave a lasting mark on both the academic and civic realms.</p>
+    <section class="page-section text formatting" id="text">
+    <h2>Text Formatting</h2>
+    <p>---This section is all about text formatting. We'll go through the HTML tags used to style text on web pages. From bolding text to emphasizing important content, this section covers the basics of text formatting with HTML.</p>
+    <hr><b>About Me</b><hr>
+    <p>I'm Marielle Anne B. Sumonod</p>
+    <p><b>Born in November 2, 2003</b></p>
+    <p><strong>My zodiac sign is Scorpio</strong></p>
+    <p><i>I am 20 years old</i></p>
+    <em>Currently studying at USTP</em>
+    <small>I am an elected SK kagawad in Barangay.</small>
+    <p>I am an <mark>IT</mark> student.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+    <p>My favorite animals are <sub>cat</sub> and dogs.</p>
+    <p>My favorite brands are <sup>xiaomi</sup> and apple.</p>
+    
 
-    <h2>Services</h2>
-    <p>Check out my <a href="https://github.com/maryelang" style="color: #1a1a1a; text-decoration: underline;">GitHub</a> page to see some of my works.</p>
+    <section class="page-section list" id="list"></section>
+    <h2>List</h2>
+    <p>---This section covers HTML list tags. We'll learn how to create ordered lists (numbered lists) and unordered lists (bullet points) using HTML. Explore these tags to organize and structure your content effectively on web pages.</p>
+    <hr><b>Random Things I like</b><hr>
+    <h4> This is unordered lists:</h4>
+<ul>
+    <li>Cats</li>
+    <li>Coffee</li>
+    <li>Tulips</li>
+</ul>
+<h4> This is an ordered lists:</h4>
+<ol>
+    <li>Cats</li>
+    <li>Coffee</li>
+    <li>Tulips</li>
+</ol>
+<h4> This is definition lists:</h4>
+<dl>
+    <dt>I love cats because:</dt>
+    <dd>-They are very cute</dd>
+    <dd>-They match my energy</dd>
 
-    <h2>Social Media</h2>
-    <p>You can also reach out to me through the following links:</p>
-    <ul>
-        <li><a href="https://zoom.us/" style="color: #1a1a1a; text-decoration: underline;">Zoom</a></li>
-        <li><a href="mailto:youremail@example.com" style="color: #1a1a1a; text-decoration: underline;">Gmail</a></li>
-        <li><a href="https://www.facebook.com/" style="color: #1a1a1a; text-decoration: underline;">Facebook</a></li>
-    </ul>
+    <dt>Coffees I like </dt>
+    <dd>-Spanish Latte</dd>
+    <dd>-Caramel Machiatto</dd>
+</dl>
 
-    <h2>Random Brands I Like</h2>
+<section class="page-section link" id="links"></section>
+    <h2>Links</h2>
+    <p>---This section is all about HTML link tags. These tags create clickable links on web pages, allowing users to navigate between different pages or resources. </p>
+    <hr><b>Reach me out through this following links</b><hr>
+
+        <li><a href="https://us05web.zoom.us/">https://us05web.zoom.us/</a></li>
+        <li><a href="https://mail.google.com/">https://mail.google.com/</a></li>
+        <li><a href="https://web.facebook.com/sumonod.marielle">https://web.facebook.com/sumonod.marielle</a></li>
+
+
+
+    <section class="page-section table" id="table"></section>
+    <h2>Tables</h2>
+    <p>---This section focuses on HTML table tags. Tables are used to organize and display data in rows and columns on web pages. </p>
+    <hr><b>Random brands I like</b><hr>
     <table>
         <thead>
             <tr>
@@ -164,27 +222,42 @@
         </tbody>
     </table>
 
-    <h2>HTML Tags</h2>
-    <hr>Text Formatting<hr>
-    <b>This text is bold</b>
-    <strong>This text is important!</strong>
-    <i>This text is italic</i>
-    <em>This text is emphasized</em>
-    <small>This is some smaller text.</small>
-    <p>Do not forget to buy <mark>milk</mark> today.</p>
-    <p>My favorite color is <del>blue</del> red.</p>
-    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-    <p>This is <sub>subscripted</sub> text.</p>
-    <p>This is <sup>superscripted</sup> text.</p>
+    <section class="page-section images" id="media"></section>
+    <h2>Media</h2>
+    <p>---This section covers HTML media tags. These tags are used to embed various types of media, such as images, videos, and audio, into web pages.</p>
+    <hr><b>Random Images I like</b><hr>
+  
+    <div style="display: flex; justify-content: space-between;">
+        <img src="photos/wp3696269-taylor-swift-reputation-wallpapers.jpg" alt="Image 1" style="width: 250px;">
+        <div style="width: 20px;"></div> <!-- Adjust the width for spacing -->
+        <img src="photos/wp4468061-taylor-swifts-reputation-stadium-tour-wallpapers.jpg" alt="Image 2" style="width: 250px;">
+        <div style="width: 20px;"></div> <!-- Adjust the width for spacing -->
+        <img src="photos/wp12161265-taylor-swift-midnights-desktop-wallpapers.jpg" alt="Image 3" style="width: 250px;">
+    </div>
+    
+    <hr><b>Random Video I like</b><hr>
+   
+    <div style="text-align: center;">
+        <video width="320" height="240" controls>
+            <source src="vid/Baby Cats - Cute and Funny Cat Videos Compilation #21 _ Aww Animals (360p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    <section class="page-section images" id="Images"></section>
-    <h2>Random Images I like</h2>
-    <img src="photos/wp3696269-taylor-swift-reputation-wallpapers.jpg" alt="Image 1">
-    <img src="photos/wp4468061-taylor-swifts-reputation-stadium-tour-wallpapers.jpg" alt="Image 2">
-    <img src="photos/wp12161265-taylor-swift-midnights-desktop-wallpapers.jpg" alt="Image 3">
+    <hr><b>My Favorite Song</b><hr>
+    <div style="text-align: center;">
+        <audio width="320" height="240" controls>
+            <source src="audio/Taylor Swift - Maroon (Official Lyric Video).mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+      </audio>
+     </div>
+     <div style="text-align: center;"><p> Maroon by Taylor Swift</p></div>
 
-    <section class="page-form" id="Form"></section>
-    <h2>Feedback Form</h2>
+     <section class="page-section form" id="Form"></section>
+    <h2>Forms</h2>
+    <p>---This section delves into HTML form tags. Forms are essential for collecting user input on web pages, such as contact information or survey responses. </p>
+    <hr><b>Feedback Form</b><hr>
+
     <form action="submit.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -197,10 +270,6 @@
         <br>
         <button type="submit">Submit</button>
     </form>
-
-    <footer>
-        <p>&copy; 2024 HTML Tags. BSIT-2R3.</p>
-    </footer>
 
 </body>
 </html>
